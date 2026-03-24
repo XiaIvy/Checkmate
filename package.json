@@ -1,0 +1,14 @@
+{
+  "name": "shipstation-shopify-rates-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shopify CarrierService callback -> ShipStation live rates bridge",
+  "main": "shipstation-shopify-rates-server.js",
+  "scripts": {
+    "start": "node shipstation-shopify-rates-server.js",
+    "check": "node --check shipstation-shopify-rates-server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
