@@ -102,16 +102,6 @@ docker build -t shipstation-shopify-rates .
 docker run --env-file .env -p 3000:3000 shipstation-shopify-rates
 ```
 
-## Safe GitHub publishing
-
-Before pushing this project to GitHub:
-
-1. Keep your real credentials only in `.env`, and commit only `.env.example`.
-2. Make sure `.env` is listed in `.gitignore` and never copied into screenshots, README examples, or deployment manifests.
-3. If any of the current local credentials were ever shared, rotate them before publishing the repo.
-4. Put production secrets only in your hosting provider's secret manager or environment-variable settings.
-5. If you create the repo after developing locally, run `git status --ignored` once to confirm `.env` is being ignored before your first commit.
-
 ## Shopify setup
 
 Create/update a CarrierService in Shopify Admin API and point it to:
